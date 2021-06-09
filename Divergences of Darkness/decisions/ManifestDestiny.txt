@@ -508,8 +508,8 @@ political_decisions = {
 		potential = { 
 		OR = {
 		    tag = NAN
-			tag = HBE
-			}
+		    tag = HBE
+		    }
 		2131 = { owned_by = SCA }
 		}
 		

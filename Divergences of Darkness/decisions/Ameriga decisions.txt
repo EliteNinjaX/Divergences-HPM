@@ -445,7 +445,10 @@ political_decisions = {
 			OR = { 
 				NOT = { LOT = { exists = yes } }
 				LOT = { 
-					in_sphere = THIS
+                                       OR = {
+					    in_sphere = THIS
+                                            vassal_of = THIS
+                                       }
 				}
 			}
 		}
@@ -476,7 +479,10 @@ political_decisions = {
 			OR = { 
 				NOT = { AMA = { exists = yes } }
 				AMA = { 
-					in_sphere = THIS
+                                       OR = {
+					    in_sphere = THIS
+                                            vassal_of = THIS
+                                       }
 				}
 			}
 			LOT = {

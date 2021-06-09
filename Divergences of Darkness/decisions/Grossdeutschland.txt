@@ -51,7 +51,7 @@ political_decisions = {
 			564 = {
 				life_rating = 10
 				add_province_modifier = { 
-				    name = global_baby_boom
+				        name = global_baby_boom
 					duration = 5475
 					}
 			}
