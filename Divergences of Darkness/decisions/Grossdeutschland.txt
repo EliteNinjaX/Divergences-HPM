@@ -715,21 +715,9 @@ political_decisions = {
     estonia_rename = {
         picture = gtfo
         potential = {
-            OR = {
-                AND = {
-                    is_culture_group = germanic
-                    owns = 349
-                    NOT = { has_global_flag = german_renamed_estonia }
-                }
-                AND = {
-                    OR = {
-                        primary_culture = estonian
-                        is_culture_group = baltic
-                    }
-                    owns = 349
-                    NOT = { has_global_flag = estonian_renamed_estonia }
-                }
-            }
+            is_culture_group = germanic
+            owns = 349
+            NOT = { has_global_flag = german_renamed_estonia }
         }
 
         allow = { war = no }
@@ -751,11 +739,9 @@ political_decisions = {
                 351 = { change_province_name = "Pernau" }
                 352 = { change_province_name = "Dorpat" }
                 353 = { change_province_name = "Ösel" }
-                owner = {
-                    set_global_flag = german_renamed_estonia
-                    clr_global_flag = estonian_renamed_estonia
-                }
             }
+            set_global_flag = german_renamed_estonia
+            clr_global_flag = estonian_renamed_estonia
         }
         ai_will_do = { factor = 1 }
     }

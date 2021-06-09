@@ -18,25 +18,25 @@ political_decisions = {
                     NOV = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     UKR = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     PSV = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     BLR = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                 }
@@ -46,25 +46,25 @@ political_decisions = {
                     MUS = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     UKR = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     PSV = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     BLR = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                 }
@@ -103,25 +103,25 @@ political_decisions = {
                     NOV = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     UKR = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     PSV = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     BLR = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                 }
@@ -131,25 +131,25 @@ political_decisions = {
                     MUS = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     UKR = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     PSV = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                     BLR = {
                         OR = {
                             NOT = { rank = 20 }
-                            NOT = { exists = yes }
+                            exists = no
                         }
                     }
                 }

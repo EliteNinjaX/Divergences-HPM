@@ -22,14 +22,6 @@ political_decisions = {
         effect = {
             prestige = 10
             badboy = 8
-            any_country = {
-                limit = {
-                    tag = PRU
-                    substate_of = PLC
-                    PLC = { war_with = THIS }
-                }
-                annex_to = SCA
-            }
             PRU = {
                 all_core = { add_core = SCA }
             }
