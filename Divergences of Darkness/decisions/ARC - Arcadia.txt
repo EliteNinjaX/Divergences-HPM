@@ -51,7 +51,7 @@ political_decisions = {
             any_country = {
                 limit = {
                     OR = {
-                        tag = VIN
+                        tag = PLA
                         tag = NBG
                         tag = ATS
                     }
@@ -121,7 +121,7 @@ political_decisions = {
                 limit = {
                     OR = {
                         tag = VIN
-                        tag = NBG
+                        tag = PLA
                         tag = ATS
                     }
                     OR = {
