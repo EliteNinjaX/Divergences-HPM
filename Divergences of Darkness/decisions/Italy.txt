@@ -533,4 +533,74 @@ political_decisions = {
 		set_country_flag = dalmatia_cores
 		}
 	}
+	unite_with_Italy = {
+		picture = picture = italy
+		potential = {
+		is_culture_group = italian
+		NOT = {
+				primary_culture = venetian
+				primary_culture = catalan
+				primary_culture = athesian
+			}
+			exists = ITA
+			NOT = {
+				has_country_flag = unite_with_Italy
+				tag = ITA
+			}
+		}
+
+		allow = {
+			war = no
+			OR = {
+				is_vassal = no
+				overlord = { is_our_vassal = ITA }
+			}
+			OR = {
+				part_of_sphere = no
+				in_sphere = ITA
+			}
+			ITA = {
+				war = no
+				neighbour = THIS
+			}
+		}
+
+		effect = {
+			set_country_flag = unite_with_Italy
+			random_country = {
+				limit = {
+					tag = ITA
+					ai = yes
+					THIS = { ai = yes }
+				}
+				inherit = THIS
+			}
+			random_country = {
+				limit = {
+					tag = ITA
+					ai = yes
+					THIS = { ai = no }
+				}
+				any_owned = { secede_province = THIS }
+				THIS = {
+					random_owned = {
+						limit = { province_id = 664 }
+						owner = { capital = 664 }
+					}
+					change_tag = ITA
+				}	
+			}
+			random_country = {
+				limit = {
+					tag = ITA
+					ai = no
+				}
+				country_event = 60130
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
