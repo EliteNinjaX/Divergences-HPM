@@ -520,12 +520,12 @@ political_decisions = {
 		potential = { 
 		tag = VEN 
 		NOT = { has_country_flag = dalmatia_cores }
-		780 = { owned_by = THIS }
 		}
 		
 		allow = { 
 		state_n_government = 1 
 		NOT = { CRO = { rank = 16 } } 
+		780 = { owned_by = THIS }
 		}
 		
 		effect = { 
@@ -533,6 +533,77 @@ political_decisions = {
 		set_country_flag = dalmatia_cores
 		}
 	}
+	albanian_occupation = {
+		picture = dalmatia	
+		potential = {
+		OR = {
+		tag = VEN
+		tag = ITA
+		}
+		NOT = { has_country_flag = albanian_occupation }
+		}
+		
+		allow = {
+		state_n_government = 1 
+		NOT = { ALB = { rank = 16 } } 
+		800 = { owned_by = THIS }
+		}
+		
+		effect = { 
+		add_core = 850
+		add_core = 849
+		add_core = 851
+		add_core = 852
+		add_core = 853
+		any_country = {
+				limit = {
+					tag = ALB
+					in_sphere = THIS
+					NOT = {
+						824 = { owned_by = ALB }
+					}
+				}
+				country_event = 11101
+			}
+		set_country_flag = albanian_occupation
+		}
+	}
+	montenegro_occupation = {
+		picture = dalmatia	
+		potential = {
+		OR = {
+		tag = VEN
+		tag = ITA
+		}
+		NOT = { has_country_flag = montenegro_occupation }
+		}
+		
+		allow = {
+		state_n_government = 1 
+		NOT = { MON = { rank = 16 } }
+		780 = { owned_by = THIS }
+		}
+		
+		effect = { 
+		add_core = 2582
+		add_core = 800
+		add_core = 2583
+		add_core = 2569
+		add_core = 2577
+		any_country = {
+				limit = {
+					tag = MON
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				country_event = 11101
+			}
+		set_country_flag = montenegro_occupation
+		}
+	}
+	
 	unite_with_Italy = {
 		picture = picture = italy
 		potential = {
@@ -558,6 +629,7 @@ political_decisions = {
 			OR = {
 				part_of_sphere = no
 				in_sphere = ITA
+				sphere_owner = { is_sphere_leader_of = ITA }
 			}
 			ITA = {
 				war = no

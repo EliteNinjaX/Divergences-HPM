@@ -693,5 +693,73 @@ political_decisions = {
 			clr_global_flag = greek_pontus
 		}
 	}
+		unite_with_greece = {
+		picture = megali
+		potential = {
+		primary_culture = greek
+			exists = GRE
+			NOT = {
+				has_country_flag = unite_with_Greece
+				tag = GRE
+				tag = MAC
+			}
+		}
+
+		allow = {
+			war = no
+			OR = {
+				is_vassal = no
+				overlord = { is_our_vassal = GRE }
+			}
+			OR = {
+				part_of_sphere = no
+				in_sphere = GRE
+				sphere_owner = { is_sphere_leader_of = GRE }
+			}
+			GRE = {
+				war = no
+				# neighbour = THIS
+				# The Islands are not neigbours like but they still should be able to join
+			}
+		}
+
+		effect = {
+			set_country_flag = unite_with_Greece
+			random_country = {
+				limit = {
+					tag = GRE
+					ai = yes
+					THIS = { ai = yes }
+				}
+				inherit = THIS
+			}
+			random_country = {
+				limit = {
+					tag = GRE
+					ai = yes
+					THIS = { ai = no }
+				}
+				any_owned = { secede_province = THIS }
+				THIS = {
+					random_owned = {
+						limit = { province_id = 664 }
+						owner = { capital = 664 }
+					}
+					change_tag = GRE
+				}	
+			}
+			random_country = {
+				limit = {
+					tag = GRE
+					ai = no
+				}
+				country_event = 60130
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
 

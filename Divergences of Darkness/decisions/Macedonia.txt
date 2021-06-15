@@ -159,15 +159,11 @@ political_decisions = {
 				}
 			}
 		GRE = { country_event = 106054 }
-		badboy = -12
+		badboy = -10
 		}
 		
 		ai_will_do = {
 		factor = 1
-		modifier = {
-				factor = 0
-				average_militancy = 4
-			}   
 		modifier = {
 				factor = 0
 				NOT = { badboy = 0.6 } 
